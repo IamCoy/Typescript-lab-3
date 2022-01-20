@@ -16,14 +16,17 @@ export class Ship implements Transporter {
         getTotalWeight(): number {
             let sum = 0
 
-            if(this.containers = []){
-                return 0
-            } else{
-            for (let container of this.containers){
-                let sum =+ container.getGrossWeight()
-            } return sum
+            if(this.containers != []){
+               
+                for (let container of this.containers){
+                 sum += container.getGrossWeight()
+                }
+            return sum
+        } else {
+            return 0
         }
         }
+        
 
         isOverWeight(): boolean {
             this.getTotalWeight();

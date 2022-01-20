@@ -1,10 +1,3 @@
-describe("LightContainer", () => {
-
-    test.todo("" , () =>{
-        
-        
-        expect().toBe()
-    })
-
-   
-});
+describe("findBestPayingJob function", () => {
+    test.todo("add findBestPayingJob tests here");
+  });

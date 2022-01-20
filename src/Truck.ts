@@ -14,10 +14,10 @@ export class Truck implements Transporter {
         }
 
         getTotalWeight(): number {
-            if(this.container = null){
-                return 0
+            if(this.container != null){
+                return this.container.getGrossWeight()
             }else{
-            return this.container.getGrossWeight()
+            return 0
             }
         }
 
